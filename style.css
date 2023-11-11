@@ -11,6 +11,7 @@ body, html {
     height: 100%;
     display: block;
     color: wheat;
+
 }
 
 
@@ -98,4 +99,58 @@ body, html {
     color:white;  
 }
   
+  .container {
+  padding: 75px 100px;
+  }
   
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  
+  }
+
+  h3{
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  p{
+    color:white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+   .button{
+    background:transparent;
+    padding: 10px 20px;
+    color:white;
+    border-radius: 20px;
+    cursor: pointer;
+   }
+
+   .buttons{
+    display: flex;
+    gap:10px;
+   }
+
+  .button-watch-now{
+    border: 2px solid #e50914;
+  }
+
+
+  .button-my-list{
+    border: 2px solid rgba(245, 245, 241, 0.2);
+    transition: border 0.125s ease, background 0.125s ease;
+  }
+
+  .button-watch-now:hover{
+    border: 2px solid #e50914;
+    background: #e50914;
+  }
+  .button-my-list:hover{
+    border: 2px solid #f5f5f1;
+  }
