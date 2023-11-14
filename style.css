@@ -7,10 +7,10 @@ body, html {
   }
 
 .root{
-    background-color: black;
-    height: 100%;
+    background-color: #221f1f;
     display: block;
-    color: wheat;
+    color: white;
+    height: auto;
 
 }
 
@@ -107,6 +107,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 500px;
+    margin-bottom: 150px;
   
   }
 
@@ -154,3 +155,52 @@ body, html {
   .button-my-list:hover{
     border: 2px solid #f5f5f1;
   }
+
+  .button-text::before{
+    content: '+';
+  }
+
+  h3{
+    color:white;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+
+
+  .movies{
+    padding: 20px;
+  }
+
+  .movie-tile{
+    display: flex;
+    gap: 15px;
+  }
+  .image{
+    flex:1;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    transition: background 1s ease;
+  }
+  
+
+  .image:hover{
+    background-size: 150%;
+  }
+  
+
+  
+.movie-description{
+  height: 100%;
+  padding: 20px;
+  line-height: 2rem;
+  font-size: 25px;
+  opacity:0;
+}
+
+.image:hover .movie-description{
+  opacity: 1;
+}
